@@ -1,0 +1,650 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif   ;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(252, 252, 252);
+    overflow-x: hidden;
+}
+header{
+    background: url(https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 113%; */
+    min-height: 450px; 
+    margin-left: -115px;
+    object-fit: fill;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+   height: 70PX;
+   position: relative;
+
+}
+nav .app-link a{
+   font-size: 15px;
+   font-weight:200;
+    color: white;
+    margin: 0 120px;
+
+}
+nav .nav-items ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 35px;
+    position: absolute;
+    left: 55%;
+    top: 25px;
+
+  
+    
+}
+nav .nav-items ul li a{
+    color:  white;
+    /* margin-right:60px ; */
+   font-size: 1.2rem;
+   font-weight: lighter;
+
+}
+.content{
+    color: white;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+
+}.content img{
+    width: 300px;
+    height: 60px;
+
+}
+.content p{
+    font-size:2rem;
+    font-weight: 100;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+.content p strong{
+    font-weight: 600;
+
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+
+    background: white;
+    height: 3.4rem;
+    width: 46%;
+    border-radius:8px ;
+}
+.search-bar .left-search, .search-bar .right-search{
+    display: inline-flex;
+    padding:0 1rem ;
+}
+.search-bar .left-search{
+    width: 30%;
+    border-right: 2px solid rgb(235, 228, 228);
+}
+.search-bar .right-search{
+    width: 70%;
+}
+
+.search-bar input{
+   border: 0;
+   outline: none;
+   font-size: 1.0rem;
+   background: transparent;
+   color: grey; 
+   width: 100%;
+   margin: 6px;
+}
+.search-bar .left-search i{
+    color: rgb(234, 114, 114);
+    font-size: 15px;
+    padding-top: 6px;
+
+
+}
+.search-bar .right-search i{
+    color: grey;
+    font-size: 15px;
+    padding-top: 6px;
+    
+}
+/* ........order scection css.......... */
+
+.order-section{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  
+
+}
+.order-section .order{
+    display: flex;
+    width: 100%;
+    margin-top:25px;
+    margin-bottom: 35px;
+    align-items: center;
+    justify-content: center;
+
+}
+.order .card{
+    width: 30%;
+    margin: 12px;
+    border-radius: 1.2rem;
+    border: 1px solid rgb(194, 191, 191);
+    transition: transform 0.3s;
+    position: relative;
+    cursor: pointer;
+}
+.order .card a img{
+    width: 100%;
+    height: 200px;
+    border-radius: 1.2rem;
+    object-fit: cover;
+}
+.order .card:hover{
+    transform: scale(1.1);
+}
+.order .card .content-list{
+    text-align: left;
+    width: 100%;
+    padding: 0 12px;
+    position: absolute;
+    bottom: 0;
+    background: white;
+}
+.order .card .content-list .heading{
+    font-size: 1rem;
+    margin:  10px 0px;
+    
+ 
+ 
+}.order .card .content-list .text{
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: rgb(106, 99, 99);
+    margin: 15px 0;
+}
+
+/* ........collection scection css.......... */
+.collections{
+    width:75%;
+    margin: 90px auto;
+    text-align: center;
+    
+}
+.collections h2{
+    text-align: left;
+    font-size: 2.1rem;
+    font-weight: lighter;
+}
+.collections p{
+   
+    text-align: left;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+.collection-des{
+    display: flex;
+    justify-content: space-between;
+}
+.collection-des .all-collection{
+    color: rgba(255, 0, 0, 0.511);
+    font-weight: 300;
+
+}
+.collection-section{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.collection-section .collection{
+    width: 270px;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+    margin: 12px 0px;
+    cursor: pointer;
+
+}
+.collection img{
+    width: 100%;
+    height: 100%;
+}
+.collection-section .collection .card1{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+     
+}
+.collection-section .collection .card1 p{
+    color:white;
+    font-weight: 100;
+    font-size: 1rem;
+    margin: 3px 7px;
+    
+
+}
+
+/* .......localtity scection css.......... */
+.cities{
+    width: 78%;
+    margin: auto;
+}
+.cities h1 {
+    color:rgb(7, 5, 5);
+    font-weight: lighter;
+    text-align: start;
+    margin-left:1.2%;
+    margin-bottom: 45px;
+
+}
+.cities h1 span{
+    color:rgb(7, 5, 5);
+    font-weight: bold;
+
+}
+.popular-location{
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap ;
+}
+.popular-location .box{
+    width: 31%;
+    background:white;
+    border: 1px solid rgb(239, 234, 234);
+    margin: 10px 12px;
+    padding: 2px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.popular-location .box:hover{
+    box-shadow: 1px 1px 10px #93919127;
+
+
+}
+.popular-location .box a{
+   text-decoration: none;
+   color: rgb(51, 41, 41); 
+   font-weight: 0 ;
+}
+.popular-location .box p{
+    margin:0;
+    
+}
+.popular-location .box .city{
+    font-size: 20px;
+    letter-spacing: 1px;
+
+
+}
+.popular-location .box .places{
+    font-size: 16px;
+    padding: 8px 0;
+
+
+}.popular-location .box i{
+   color:rgb(20, 18, 18) ;
+
+}
+/* -............app SECTION..... */
+.app-section{
+    margin-top: 130px;
+    width: 100%;
+    background:  #f8ebdc23; ;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.app{
+    display: flex;
+    width: 70%;
+    margin: 0 auto ; 
+  
+    transform: translateX(50px);
+    
+}
+.app .app-image{
+    width: 40%;
+    
+}
+.app .app-image img{
+    width: 100%;
+  
+}
+.app .get-app{
+    padding-top: 20px;
+    width: 60%;
+    margin-left: 40px;
+   
+}
+.app .get-app h2{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    margin-bottom: 25px;
+}
+.app .get-app p{
+    width: 68%;
+    line-height: 30px;
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-bottom: 30px; 
+ }
+.app .get-app .email-phone input{
+     margin-bottom: 30px;
+     transition: transform 0.5s;
+   
+}
+
+
+.app .get-app .email-phone input[type=radio]{
+
+    accent-color: rgb(234, 25, 25);
+    cursor: pointer;
+  
+
+}
+.app .get-app .email-phone input[type=radio]:hover{
+
+    accent-color: rgb(10, 7, 192);
+    /* cursor: pointer; */
+  
+
+}
+.submit input{
+    width: 60%;
+    padding: 15px 8px;
+    border: 0;
+    outline: none;
+    border: 1px solid rgb(202, 197, 197);
+    border-radius: 7px;
+    margin-right: 3px;
+    font-size: 15px;
+}
+.submit button{
+    color: white;
+    background-color: red;
+    width: 20%;
+    padding: 15px 8px;
+    border: 0;
+    outline:none;
+    border: 1px solid red;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.download p{
+   color:grey;
+    font-size: 10px;
+    padding: 10px 0 ;
+}
+.app-store img{
+    margin: 15px 8px;
+    width: 150px; 
+    cursor: pointer;
+   
+}
+/* -............near me SECTION..... */
+.explore-options{
+    width:70% ;
+    margin: auto;
+
+}
+.explore-options h1{
+    color: rgba(26, 25, 30, 0.712);
+    font-weight: 100;
+    margin-top: 50px;
+
+}
+.explore-options .options {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.explore-options .options .boxes{
+    width: 100%;
+    background:white;
+    border: 1px solid hsla(0, 7%, 76%, 0.401);
+    margin: 20px 12px;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.explore-options .options a{
+    color: #333;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+/* ............Last SECTION........ */
+
+.footer-section{
+    margin-top: 40px;
+    width: 100%;
+    height:500px;
+    background-color:rgba(237, 236, 236, 0.299);
+    position: relative;
+    
+
+}
+.footer-section .footer{
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    position: relative;
+    
+}
+
+.footer-section .footer .image img{
+    width:130px;
+    position: absolute;
+    left: 15%;
+    top: 50px;
+    
+    
+
+}
+.footer-section .footer-btn{
+    display: flex;
+    position:absolute;
+    right: 15%;
+    top: 50px;
+    gap: 23px;
+    width: 250px;
+    
+}
+.footer-btn .btn-india{
+    width: 100%;
+    height: 40px;
+   font-size: 19px;
+   font-weight: lighter;
+   border-radius: 5px;
+   border: 1px solid rgba(126, 109, 109, 0.619);
+   background: rgba(253, 250, 250, 0.925);
+   cursor: pointer;
+}
+.footer-btn .btn-india img{
+    width: 20px;
+    
+}
+.ardwn{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.656);
+}
+.footer-btn .btn-lang{
+    width: 100%;
+    height: 40px;
+    font-size: 17px;
+    font-weight: lighter;
+    border-radius: 5px;
+    border: 1px solid rgba(192, 188, 188, 0.619);
+    background: rgba(253, 250, 250, 0.925);
+    cursor: pointer;
+}
+.arodwn{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.656);
+}
+
+.footer-link{
+    width: 80%;
+    margin-left: 230px;
+    margin-top: 120px;
+    transition: transform 0.5s;
+    margin-bottom: 60px;
+}
+.footer-link .coloumn{
+    width: 100%;
+    display: flex;
+    gap: 75px;
+
+    
+}
+
+.footer-link .coloumn .abt-zmto p{
+    font-size: 14px;
+    font-weight: 550;
+    margin: 15px 0;
+    letter-spacing: 1px;
+    
+}
+.abt-zmto .col-link li {
+    margin-top: 10px;
+    list-style: none;
+    font-size: 14.9px;
+
+}
+.col-link a{
+    color: rgba(84, 82, 82, 0.959);
+}
+.col-link a:hover{
+    color:black;
+    transform:scale(1.1);
+}
+
+.footer-link .coloumn .averse p{
+    font-size: 14px;
+    font-weight: 550;
+    margin: 15px 0;
+    letter-spacing: 1px;
+}
+.averse .col-link li{
+    margin-top: 10px;
+    list-style: none;
+    font-size: 14.9px;
+}
+
+
+.footer-link .coloumn .restuarant p{
+    font-size: 14px;
+    font-weight: 550;
+    margin: 15px 0;
+    letter-spacing: 1px;
+}
+.restuarant .col-link li{
+    margin-top: 10px;
+    list-style: none;
+    font-size: 14.9px;
+}
+
+
+.footer-link .coloumn .learn p{
+    font-size: 14px;
+    font-weight: 550;
+    margin: 15px 0;
+    letter-spacing: 1px;
+}
+.learn .col-link li{
+    margin-top: 10px;
+    list-style: none;
+    font-size: 14.9px;
+}
+
+.footer-link .coloumn .social p{
+    font-size: 14px;
+    font-weight: 550;
+    margin: 15px 0;
+    letter-spacing: 1px;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+}
+.social .icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.social .icon i{
+    background-color: black;
+    color: white;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 3px 0px 0px 1px;
+    cursor: pointer;
+    
+    
+
+} 
+.social .store img{
+    width: 140px;
+    display: flex;
+    margin-bottom: 10px;
+    cursor: pointer;
+   
+
+}
+.line{
+    width: 70%;
+    height: 1px;
+    background-color: rgba(50, 53, 53, 0.197);
+    margin: auto;
+}
+.End{
+    width: 100%;    
+    margin-top: 20px;
+    margin-left: 230px;
+   font-size: 13.5px;
+   font-weight: lighter;
+   color: rgba(128, 128, 128, 0.652);
+}
+
+
+
+
+
+
